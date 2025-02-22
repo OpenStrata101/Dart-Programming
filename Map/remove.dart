@@ -1,0 +1,11 @@
+void main() {
+  var student = new Map();
+  student['Name'] = 'John';
+  student['Age'] = 23;
+  student['City'] = 'paris';
+  student['Country'] = 'France';
+  student.addAll({'Planet': 'Earth', 'Galaxy': 'Milkyway'});
+
+  student.remove('Age');
+  print(student);
+}
