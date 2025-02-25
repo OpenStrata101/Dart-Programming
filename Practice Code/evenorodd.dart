@@ -1,14 +1,12 @@
 import 'dart:io';
 
 void main() {
-  print("Enter a random number: ");
+  print("Enter a number: ");
   int num = int.parse(stdin.readLineSync()!);
 
-  var mod = num % 2;
-
-  if ( mod == 0) {
-    print("It's an even number");
+  if ( num%2 == 0) {
+    print("This is an even number");
   } else {
-    print("It's an odd number");
+    print("This is an odd number");
   }
 }
